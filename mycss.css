@@ -66,3 +66,6 @@
 	top: 20px;
 	float:left;
 }
+#aaa:hover, aaa:focus{
+	cursor: url("curs/13.cur"),pointer;
+}
