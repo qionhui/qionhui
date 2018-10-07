@@ -4,20 +4,58 @@
 	<meat charset="utf-8" />
 	<title>帅灰_index</title>
 	<link rel='stylesheet' href='mycss.css' />
+	<link href="SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+	<script src="SpryMenuBar.js" type="text/javascript"></script>
 <body>
 	<div class="MAX">
-		<div class="Head"><p>欢迎来到帅灰的主页</p></div>
-		<div class="Alink"><a href="#">
-			<div class="Text" id="Text">
+		<div class="Head"><p>欢迎来到本帅灰的主页</p>
+				<div id = "Text">
 				<img src="imgs/xiao mai.png" width="30px" height="30px" />
-				<a href="tencent://message/?uin=227040015" id="aaa">联系我 Tencent-qq:227040015</a>
+				<a href="tencent://message/?uin=227040015" id="aaa">联系我 Tencent-qq:227040015</a></div>
 			</div>
+		<div class="Alink">
+	      <div class="Aul">
+		      <ul id="MenuBar1" class="MenuBarHorizontal">
+		        <li><a href="#">首页</a> </li>
+		        <li><a href="#" class="MenuBarItemSubmenu">图片</a>
+		          <ul>
+		            <li><a>电脑壁纸</a></li>
+					<li><a>手机壁纸</a></li>
+					<li><a>图片表情</a></li>
+	              </ul>
+	            </li>
+		        <li><a href="#">音乐</a>
+					<ul>
+		            <li><a>作者的歌单</a></li>
+	              </ul>
+				</li>
+		        <li><a href="#">H5小游戏</a>
+					<ul>
+		            <li><a>善未完善</a></li>
+	              </ul>
+				</li>
+		        <li><a href="#">关于作者</a>
+					<ul>
+		            <li><a>除了帅</a></li>
+					<li><a>没什么好说的</a></li>
+	              </ul>
+				</li>
+		        <li><a href="#">联系我</a>
+					<ul>
+		            <li><a href="tencent://message/?uin=227040015">QQ</a></li>
+				</li>
+	        </ul>
+	      </div>
+		    <div class="Text"></div>
 			
-		</div>
+	  </div>
 		
 		<div class="Centre"></div>
 		<div class="Foot"></div>
 	</div>
 	<script src="myjs.js"></script>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+    </script>
 </body>
 </html>
